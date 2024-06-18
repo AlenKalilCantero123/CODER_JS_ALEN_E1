@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Fondo que se ajusta al tamaño de la pantalla */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-image: url('https://files.merca20.com/uploads/2017/12/Cine-1.jpg'); /* Imagen de fondo */
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para la sección principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para el contenedor de tarjetas con CSS Grid */
+#cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas de tamaño automático */
+    gap: 20px; /* Espacio entre las tarjetas */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente para permitir ver el fondo del body */
+    padding: 20px; /* Añadimos espacio interno para separar las tarjetas del borde */
+}
+
+
+/* Estilo base para las tarjetas */
+.card {
+    width: calc(50% - 20px); /* Ancho de la tarjeta como la mitad del contenedor menos el espacio interno */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+/* Estilos para la imagen dentro de las tarjetas */
+.card img {
+    max-width: 100%; /* La imagen no excederá el ancho de la tarjeta */
+    height: auto; /* La altura se ajustará automáticamente */
+    border-radius: 5px; /* Borde redondeado para la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el resto del contenido */
+}
+
+/* Estilos para el título dentro de las tarjetas */
+.card h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el botón dentro de las tarjetas */
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#descriptionBox {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Ancho máximo del box */
+    border-radius: 10px; /* Borde redondeado */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
