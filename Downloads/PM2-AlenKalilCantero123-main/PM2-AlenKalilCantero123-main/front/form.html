@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/reset.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Formulario de Películas</title>
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_mi.html">Sobre mí</a></li>
+                <li><a href="historia_cine.html">Historia del Cine</a></li>
+                <li><a href="webs_recomendadas.html">Webs Recomendadas</a></li>
+                <li><a href="form.html">Formulario</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="descriptionBox">
+            <p>Bienvenido a nuestra página de películas, donde encontrarás las últimas novedades, reseñas, y mucho más.</p>
+        </section>
+        <section id="formSection">
+            <div class="container">
+                <h2>Formulario de Películas</h2>
+                <form id="movieForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Título de la película.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="anio">Año:</label>
+                        <input type="number" id="anio" name="anio" placeholder="Año de la película.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="director">Director:</label>
+                        <input type="text" id="director" name="director" placeholder="Director de la película.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Género:</label>
+                        <input type="text" id="genero" name="genero" placeholder="Género de la película.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <input type="number" id="rating" name="rating" placeholder="Rating de la película.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="poster">URL del Póster:</label>
+                        <input type="url" id="poster" name="poster" placeholder="URL del póster de la película.." required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submitBtn">Enviar</button>
+                        <button type="button" id="clearBtn">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Página de Películas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./public/bundle.js"></script>
+</body>
+</html>

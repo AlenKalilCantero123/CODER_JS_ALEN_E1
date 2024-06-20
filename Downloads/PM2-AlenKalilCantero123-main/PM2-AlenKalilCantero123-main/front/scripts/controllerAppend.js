@@ -1,7 +1,7 @@
 const { jsToHTML } = require('./ControllerJsToHTML.js');
 
 function appendHTMLToDOM(info) {
-    const cardsContainer = document.querySelector("#cardsContainer");
+    const cardsContainer = document.getElementById("cardsContainer");
     cardsContainer.innerHTML = ''; // Limpiamos el contenedor antes de añadir nuevos elementos
 
     if (Array.isArray(info)) {
